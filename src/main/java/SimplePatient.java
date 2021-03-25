@@ -1,14 +1,9 @@
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.parser.IParser;
-import ca.uhn.fhir.rest.client.api.IClientInterceptor;
-import ca.uhn.fhir.rest.client.api.IHttpRequest;
-import ca.uhn.fhir.rest.client.api.IHttpResponse;
 import org.hl7.fhir.r4.model.Bundle;
 import org.hl7.fhir.r4.model.Patient;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
@@ -55,9 +50,6 @@ public class SimplePatient implements Comparable<SimplePatient> {
             patientList.add(newPatient);
 
         }
-//        String stuff = parser.setPrettyPrint(true).encodeResourceToString(response.getEntry().get(0).getResource());
-//        Patient parsed = parser.parseResource(Patient.class, stuff);
-//        System.out.println(parsed.getName().get(0).getFamily());
 
         patientList.sort(SimplePatient::compareTo);
 
@@ -72,7 +64,7 @@ public class SimplePatient implements Comparable<SimplePatient> {
     public String toString(){
         //Can use stringBuilder instead, but not necessary
         return "The patient " + firstName + " " + lastName+ " was born on " +
-                birthDate;
+                birthDate ;
     }
 
 
