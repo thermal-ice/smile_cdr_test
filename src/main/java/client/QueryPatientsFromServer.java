@@ -1,4 +1,4 @@
-package com.simple.med;
+package client;
 
 import ca.uhn.fhir.rest.api.CacheControlDirective;
 import ca.uhn.fhir.rest.client.api.IGenericClient;

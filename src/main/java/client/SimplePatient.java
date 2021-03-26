@@ -1,4 +1,4 @@
-package com.simple.med;
+package client;
 
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.parser.IParser;

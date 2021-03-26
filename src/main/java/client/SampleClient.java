@@ -1,8 +1,7 @@
-package com.simple.med;
+package client;
 
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
-import com.simple.med.QueryPatientsFromServer;
 
 import java.util.*;
 
@@ -10,7 +9,6 @@ import java.util.*;
 public class SampleClient {
 
     public static double getAverageOfList(List<Long> longList){
-
         double sum = 0.0;
         for(long elem: longList){
             sum += (double) elem;

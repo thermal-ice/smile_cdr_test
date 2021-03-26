@@ -1,4 +1,4 @@
-package com.simple.med;
+package client;
 
 import ca.uhn.fhir.interceptor.api.Interceptor;
 import ca.uhn.fhir.rest.client.api.IClientInterceptor;
