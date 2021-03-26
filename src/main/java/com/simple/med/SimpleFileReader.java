@@ -1,3 +1,4 @@
+package com.simple.med;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
