@@ -15,15 +15,18 @@ import static org.mockito.ArgumentMatchers.anyString;
 
 public class QueryPatientsFromServerTests {
 
+    IGenericClient client;
+    Bundle response;
+
     @Before
     public void setUp(){
-
+         client = Mockito.mock(IGenericClient.class);
+         response = Mockito.mock(Bundle.class);
     }
 
 //    @Test
 //    public void testQueryPatientsWithLastName(){
-//        IGenericClient client = Mockito.mock(IGenericClient.class);
-//        Bundle response = Mockito.mock(Bundle.class);
+
 //
 //        Mockito.when(client
 //                    .search()

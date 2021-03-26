@@ -1,5 +1,6 @@
 package client;
 
+import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ public class SimpleFileReader {
 
     private final List<String> lastNamesList;
 
-    public SimpleFileReader(String pathToNamesFile){
+    public SimpleFileReader(String pathToNamesFile) {
 
         this.lastNamesList = new ArrayList<>();
 
